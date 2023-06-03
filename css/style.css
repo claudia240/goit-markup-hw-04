@@ -1,4 +1,5 @@
 :root {
+	--light-grey: #afb1b8;
 	--brand-color: #2196f3;
 	--main-text-color: black;
 	--text-color1: #212121;
@@ -128,6 +129,8 @@ a {
 footer {
 	background-color: var(--background-color1);
 	padding: 60px 0;
+	display: flex;
+    flex-direction: column;
 }
 
 button {
@@ -159,7 +162,10 @@ button:hover {
 }
 .order {
 	padding: 200px 0;
-	background: var(--background-color1);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: 1600px;
 }
 
 .order-button {
@@ -188,7 +194,6 @@ button:hover {
 
 .section-one {
 	width: 696px;
-	background-color: var(--background-color1);
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -197,13 +202,17 @@ button:hover {
 	color: #fff;
 	margin: 0 auto;
 }
-
-.lorem-list {
+.order .lorem-list {
 	list-style-type: none;
 	font-style: normal;
 	display: flex;
 	gap: 30px;
 }
+.section-two {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .section-two h2 {
 	font-weight: 700;
 	font-size: 14px;
@@ -377,6 +386,7 @@ button:hover {
 	letter-spacing: 0.03em;
 }
 
+
 .footer-item:not(:last-child) {
 	margin-bottom: 9px;
 }
@@ -402,4 +412,127 @@ button:hover {
 	line-height: 30px;
 	letter-spacing: 0.03em;
 	color: #757575;
+}
+.customers-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 92px;
+	border: 1px solid currentColor;
+	color: var(--icon-color);
+	border-radius: 4px;
+}
+.customers-link:hover,
+.customers-link:focus {
+	color: var(--acent-color);
+}
+
+.customers-icon {
+	fill: currentColor;
+}
+
+.footer .box {
+	display: flex;
+	flex-direction: column;
+	margin-left: 70px;
+	justify-content: center;
+}
+
+.footer .font {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 5px;
+}
+
+.section-four .icon {
+	border: 1px solid var(--light-grey);
+	fill: var(--light-grey);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.section-clients .icon {
+	border: 1px solid var(--light-grey);
+	fill: var(--light-grey);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.section-clients h2 {
+	margin-bottom: 50px;
+	color: var(--text-color1);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.61;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+.section-clients .box {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin-bottom: 94px;
+}
+
+.section-clients .icon:hover {
+	border: 1px solid var(--brand-color);
+	fill: var(--brand-color);
+}
+
+.section-four .icon:hover {
+	border: 1px solid var(--brand-color);
+	fill: var(--brand-color);
+}
+
+.section-two .icon {
+	border: 1px solid var(--light-grey);
+	fill: var(--main-text-color);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.section-two .icon:hover {
+	border: 1px solid var(--brand-color);
+	fill: var(--brand-color);
+}
+
+.footer-box {
+display: flex;
+flex-direction: column;
+margin-left: 70px;
+align-items: center;
+width: 1200px;
+margin: 0 auto;
+}
+
+footer .icon {
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+}
+.footer-box h5 {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 5px;
+	color: var(--main-background-color);
+}
+
+footer .icon:hover {
+    fill: var(--main-background-color)
+    background-color: var(--brand-color);
+    border-radius: 22px;
+}
+
+.header-icons {
+	fill: var(--light-grey);
+	cursor: pointer;
+	color: var(--light-grey);
+	justify-content: right;
+}
+.contact-link-style a:focus,
+.contact-link-style a:hover{
+	color: var(--brand-color);
+	fill: var(--brand-color);
 }
