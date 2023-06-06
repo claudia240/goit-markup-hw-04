@@ -300,6 +300,7 @@ button:hover {
 	display: flex;
 }
 .section-four-item {
+
 	text-align: center;
 	background: #ffffff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -475,12 +476,20 @@ button:hover {
 	align-items: center;
 	justify-content: center;
 	color: var(--light-grey);
-
+	gap: 10px;
+	
 }
 
-.social-links .link:hover,
-.social-links .link:focus {
+
+.social-links:hover,
+.social-links:focus {
   background-color: var(--brand-color);
+  color: var(--main-background-color);
+ 
+}
+
+.section-clients{
+	padding: 94px 0;
 }
 .section-clients .icon {
 	border: 1px solid var(--light-grey);
@@ -499,11 +508,8 @@ button:hover {
 	letter-spacing: 0.03em;
 }
 .section-clients .box {
-	list-style-type: none;
 	display: flex;
-	justify-content: space-between;
-	padding: 0;
-	margin-bottom: 94px;
+	gap: 30px;
 }
 
 .section-clients .icon:hover {
@@ -511,10 +517,7 @@ button:hover {
 	fill: var(--brand-color);
 }
 
-.section-four .icon:hover {
-	border: 1px solid var(--brand-color);
-	fill: var(--brand-color);
-}
+
 
 .section-two .icon {
 	border: 1px solid var(--light-grey);
