@@ -131,8 +131,6 @@ a {
 footer {
 	background-color: var(--background-color1);
 	padding: 60px 0;
-	display: flex;
-    flex-direction: column;
 }
 
 button {
@@ -157,10 +155,11 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+.portfolio-button:hover,
+.portfolio-button:focus {
 	background-color: var(--brand-color);
 	color: #ffffff;
-	cursor: pointer;
+	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 .order {
 	padding: 200px 0;
@@ -171,8 +170,6 @@ button:hover {
 	max-width: 1600px;
 	height: 600px;
 	margin: 0 auto;
-
-
 }
 
 .order-button {
@@ -215,7 +212,7 @@ button:hover {
 	display: flex;
 	gap: 30px;
 }
-.lorem-icons{
+.lorem-icons {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -300,7 +297,6 @@ button:hover {
 	display: flex;
 }
 .section-four-item {
-
 	text-align: center;
 	background: #ffffff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -404,7 +400,6 @@ button:hover {
 	letter-spacing: 0.03em;
 }
 
-
 .footer-item:not(:last-child) {
 	margin-bottom: 9px;
 }
@@ -450,13 +445,6 @@ button:hover {
 	fill: currentColor;
 }
 
-.footer .box {
-	display: flex;
-	flex-direction: column;
-	margin-left: 70px;
-	justify-content: center;
-}
-
 .footer .font {
 	font-weight: 700;
 	font-size: 14px;
@@ -465,37 +453,44 @@ button:hover {
 }
 
 .section-four .icon {
-
 	fill: currentColor;
-
 }
-.social-links{
-	height: 44 44;
+.social-list {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.social-links {
+	width: 44px;
+	height: 44px;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: var(--light-grey);
-	gap: 10px;
-	
 }
-
+.social-links-footer {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--main-background-color);
+}
 
 .social-links:hover,
 .social-links:focus {
-  background-color: var(--brand-color);
-  color: var(--main-background-color);
- 
+	background-color: var(--brand-color);
+	color: var(--main-background-color);
 }
 
-.section-clients{
+.section-clients {
 	padding: 94px 0;
 }
 .section-clients .icon {
-	border: 1px solid var(--light-grey);
 	fill: var(--light-grey);
-	border-radius: 4px;
-	cursor: pointer;
 }
 
 .section-clients h2 {
@@ -517,8 +512,6 @@ button:hover {
 	fill: var(--brand-color);
 }
 
-
-
 .section-two .icon {
 	border: 1px solid var(--light-grey);
 	fill: var(--main-text-color);
@@ -531,20 +524,18 @@ button:hover {
 }
 
 .footer-box {
-display: flex;
-flex-direction: column;
-margin-left: 70px;
-align-items: center;
-width: 1200px;
-margin: 0 auto;
+	display: flex;
+	align-items: baseline;
+}
+.footer-links {
+	margin-left: 70px;
 }
 
 footer .icon {
-	list-style-type: none;
-	display: flex;
-	padding: 0;
+	fill: currentColor;
 }
-.footer-box h5 {
+
+.footer-box p {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 16px;
@@ -552,18 +543,25 @@ footer .icon {
 	color: var(--main-background-color);
 }
 
-footer .icon:hover {
-    fill: var(--main-background-color)
-    background-color: var(--brand-color);
-    border-radius: 22px;
+footer .icon:hover,
+footer .icon:focus {
+	background-color: var(--brand-color);
+	color: var(--main-background-color);
 }
 
 .header-icons {
 	fill: currentColor;
-
 }
 .contact-link-style a:focus,
-.contact-link-style a:hover{
+.contact-link-style a:hover {
 	color: var(--brand-color);
 	fill: var(--brand-color);
+}
+
+.portfolio-link {
+	display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
