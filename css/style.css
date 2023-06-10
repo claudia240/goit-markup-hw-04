@@ -433,12 +433,12 @@ button {
 	width: 170px;
 	height: 92px;
 	border: 1px solid currentColor;
-	color: var(--icon-color);
+	color: var(--light-grey);
 	border-radius: 4px;
 }
 .customers-link:hover,
 .customers-link:focus {
-	color: var(--acent-color);
+	color: var(--brand-color);
 }
 
 .customers-icon {
@@ -490,7 +490,7 @@ button {
 	padding: 94px 0;
 }
 .section-clients .icon {
-	fill: var(--light-grey);
+	fill: currentColor;
 }
 
 .section-clients h2 {
@@ -505,11 +505,6 @@ button {
 .section-clients .box {
 	display: flex;
 	gap: 30px;
-}
-
-.section-clients .icon:hover {
-	border: 1px solid var(--brand-color);
-	fill: var(--brand-color);
 }
 
 .section-two .icon {
@@ -539,14 +534,13 @@ footer .icon {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 16px;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 	color: var(--main-background-color);
 }
 
-footer .icon:hover,
-footer .icon:focus {
+.social-links-footer:hover,
+.social-links-footer:focus {
 	background-color: var(--brand-color);
-	color: var(--main-background-color);
 }
 
 .header-icons {
@@ -564,4 +558,7 @@ footer .icon:focus {
 .portfolio-link:hover,
 .portfolio-link:focus {
 	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+.footer-style1 {
+	margin-right: 70px;
 }
